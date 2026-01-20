@@ -204,7 +204,7 @@ nav {
 .choice-cards {
     display: grid;
     gap: 20px; 
-    padding: 40px 180px 100px;
+    padding: 40px 180px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
@@ -239,4 +239,58 @@ nav {
 .small-grid {
     grid-column: span 1;
     grid-row: span 1;
+}
+
+
+/* featured episode section */
+
+.episodes{
+    padding: 180px;
+}
+
+.featured-episode-h1{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 200px 40px;
+}
+
+.youtube-links{
+    display: flex;
+    gap: 50px;
+}
+
+.youtube-links .live-link{
+    text-align: center;
+    border-radius: 30px;
+}
+.youtube-links h1{
+    color: white;
+    font-size: 25px;
+    text-align: left; 
+    font-weight: bold;
+    padding: 10px;
+}
+
+.youtube-links .live-link p{
+    font-size: 18px;
+    color: #627382;
+    text-align: left;
+    padding: 10px; 
+}
+
+.youtube-duration{
+    display: inline-flex;
+    gap: 10px;
+    color: #00FF88;
+    text-align: left;
+    align-items: left;
+}
+
+.the-host-h1{
+    color: white;
+    font-size: 25px;
+    text-align: center; 
+    padding: 10px;
 }
