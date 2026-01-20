@@ -20,7 +20,7 @@ nav {
 }
 
 #nav-left-text {
-    background: linear-gradient(#9100F8, #FB09B4, #F7E93F);
+    background: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -34,48 +34,48 @@ nav {
     cursor: pointer;
 }
 
-#nav-center-about, #nav-center-episode, #nav-center-host{
+#nav-center-about,
+#nav-center-episode,
+#nav-center-host {
     cursor: pointer;
 }
 
 #subscribe-button {
-    height: 44px;
-    width: 135px;
-    background: linear-gradient(#9100F8, #FB09B4, #F7E93F);
+    display: inline-flex;
+    gap: 2px;
+    background: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F);
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
     color: #FFFFFF;
-    border: none;
-    padding: 12px 16px;
     border-radius: 40px;
-    align-items: center;
-    cursor:pointer
+    cursor: pointer;
+
 }
 
 
 
 /* banner */
 
-#banner{
+#banner {
     background-color: #1A0B2E;
     background-image: url(images/hero-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height:fit-content;
+    height: fit-content;
 }
 
-.hero-circle{
+.hero-circle {
     position: relative;
     top: 150px;
 }
 
-#microphone{
+#microphone {
     position: relative;
     top: -125px;
 }
 
-#span{
+#span {
     background-color: #00FF88;
     height: 38px;
     width: 75px;
@@ -87,14 +87,14 @@ nav {
     padding: 12px 16px;
     border-radius: 40px;
     align-items: center;
-    cursor:pointer;
+    cursor: pointer;
     position: relative;
     top: -370px;
     right: -100px;
 }
 
 
-#banner-h2{
+#banner-h2 {
     font-size: 60px;
     font-weight: bolder;
     color: white;
@@ -102,31 +102,32 @@ nav {
     text-align: center;
 }
 
-#banner-p{
-    font-size: 16px;
-    font-weight:400;
+#banner-p {
+    font-size: 20px;
+    font-weight: 400;
     color: #627382;
     align-items: center;
     text-align: center;
 }
 
-.banner-center{
-   align-items: center;
-   text-align: center;
+.banner-center {
+    align-items: center;
+    text-align: center;
 }
 
 
-#buttons{
+#buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
     align-items: center;
 }
 
-#spotify{
-    height: 44px;
-    width: 200px;
-    background: linear-gradient(#9100F8, #FB09B4, #F7E93F);
+#spotify {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F);
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -138,53 +139,104 @@ nav {
     cursor: pointer;
 }
 
-#subscribe{
-    height: 44px;
-    width: 200px;
-    border: 15px solid #00FF88;
-    font-family: "Inter", sans-serif;
-    background:#1E0B36;
-    font-weight: 500;
-    font-size: 16px;
-    color: #00FF88;
-    border: none;
-    padding: 12px 16px;
-    border-radius: 40px;
+#subscribe {
+    display: inline-flex;
     align-items: center;
+    gap: 5px;
+    border: 1px solid #00FF88;
+    font-family: "Inter", sans-serif;
+    background: #1E0B36;
+    font-weight: 500;
+    font-size: 18px;
+    color: #00FF88;
+    padding: 8px 10px;
+    border-radius: 40px;
+    text-align: center;
     cursor: pointer;
 }
 
 /* about section */
 
-.about-stat{
+.about-stat {
     display: flex;
     justify-content: space-around;
-    text-align: center; 
+    text-align: center;
     padding: 50px, 150px 100px;
 }
 
-.about-text-h2{
-    font-size: 48px;
+.about-text-h2 {
+    font-size: 50px;
     font-weight: bold;
     color: white;
     align-items: center;
     text-align: center;
 }
 
-.about-text-p{
-    font-size: 20px;
+.about-text-p {
+    font-size: 25px;
     font-weight: 300;
     color: #627382;
     align-items: center;
     text-align: center;
-    padding: 50px 150px; 
+    padding: 50px 150px;
 }
 
-.about-stat-bold{
-    color:#00FF88;
-    font-size: 48;
+.about-stat-bold {
+    color: #00FF88;
+    font-size: 80px;
 }
-.about-stat-normal{
+
+.about-stat-normal {
     color: #627382;
+    font-size: 25px;
+}
 
+/* choice section */
+
+.choice-h1 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding: 100px 200px 40px;
+}
+
+.choice-cards {
+    display: grid;
+    gap: 20px; 
+    padding: 40px 180px 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.choice-cards .card{
+    border-radius: 30px;
+    background-color: #351165;
+    padding: 30px;
+}
+
+.choice-cards .card h2 {
+    font-size: 25px;
+    color: white;
+}
+
+.choice-cards .card p {
+    font-size: 18px;
+    color: #627382;
+    text-align: left;
+}
+
+
+.square-grid {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.wide-grid {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.small-grid {
+    grid-column: span 1;
+    grid-row: span 1;
 }
