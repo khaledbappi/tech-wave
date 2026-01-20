@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #1E0B36;
 }
 
 .font {
@@ -104,7 +105,7 @@ nav {
 #banner-p{
     font-size: 16px;
     font-weight:400;
-    color: white;
+    color: #627382;
     align-items: center;
     text-align: center;
 }
@@ -153,4 +154,37 @@ nav {
     cursor: pointer;
 }
 
+/* about section */
 
+.about-stat{
+    display: flex;
+    justify-content: space-around;
+    text-align: center; 
+    padding: 50px, 150px 100px;
+}
+
+.about-text-h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.about-text-p{
+    font-size: 20px;
+    font-weight: 300;
+    color: #627382;
+    align-items: center;
+    text-align: center;
+    padding: 50px 150px; 
+}
+
+.about-stat-bold{
+    color:#00FF88;
+    font-size: 48;
+}
+.about-stat-normal{
+    color: #627382;
+
+}
